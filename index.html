@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Book Library</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <h1>Book Library</h1>
+      </div>
+    </div>
+    
+    <form style="margin-top: 5%">
+      <div class="row">
+        <div class="four columns">
+          <label for="bookTitle">Title</label>
+          <input class="u-full-width" type="text" id="bookTitle">
+        </div>
+        <div class="four columns">
+          <label for="bookAuthor">Author</label>
+          <input class="u-full-width" type="text" id="bookAuthor">
+        </div>
+        <div class="four columns">
+          <label for="bookPages">Pages</label>
+          <input class="u-full-width" type="number" id="bookPages">
+        </div>
+      </div>
+      <label class="readStatus">
+        <input type="checkbox">
+        <span class="label-body">Have you read the book?</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+
+    <table class="u-full-width" style="margin-top: 5%">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dave Gamache</td>
+          <td>26</td>
+          <td>Male</td>
+          <td>San Francisco</td>
+        </tr>
+        <tr>
+          <td>Dwayne Johnson</td>
+          <td>42</td>
+          <td>Male</td>
+          <td>Hayward</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="index.js"></script>
+</body>
+</html>

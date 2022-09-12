@@ -1,96 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Book Library</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8" />
+    <title>My book library</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    
-    <div class="row">
-      <div class="one-half column" style="margin-top: 5%">
-        <h1>Book Library</h1>
+    <div class="container">
+      <div class="row">
+        <div class="twelve column" style="margin-top: 10%; margin-bottom: 10%;">
+          <h1>My book library</h1>
+        </div>
+      </div>
+      <div class="row">
+        <form action="">
+          <div class="five columns">
+            <label for="name">Book</label>
+            <input type="text" class="u-full-width" id="name" />
+          </div>
+          <div class="five columns">
+            <label for="author">Author</label>
+            <input type="text" class="u-full-width" id="author" />
+          </div>
+          <div class="two columns">
+            <label for="status">Status</label>
+            <select name="status" id="status" class="u-full-width">
+              <option value="read">Read</option>
+              <option value="not read">Not read</option>
+            </select>
+          </div>
+          <input type="submit" value="submit" class="button-primary" />
+        </form>
+      </div>
+      <div class="row">
+        <div class="twelve columns"></div>
+        <table class="twelve columns">
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          <tbody id="book-table-body"></tbody>
+        </table>
       </div>
     </div>
-    
-    <form style="margin-top: 5%">
-      <div class="row">
-        <div class="four columns">
-          <label for="bookTitle">Title</label>
-          <input class="u-full-width" type="text" id="bookTitle">
-        </div>
-        <div class="four columns">
-          <label for="bookAuthor">Author</label>
-          <input class="u-full-width" type="text" id="bookAuthor">
-        </div>
-        <div class="four columns">
-          <label for="bookPages">Pages</label>
-          <input class="u-full-width" type="number" id="bookPages">
-        </div>
-      </div>
-      <label class="readStatus">
-        <input type="checkbox">
-        <span class="label-body">Have you read the book?</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
-    </form>
 
-    <table class="u-full-width" style="margin-top: 5%">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Pages</th>
-          <th>Read Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Dave Gamache</td>
-          <td>26</td>
-          <td>Male</td>
-          <td>San Francisco</td>
-        </tr>
-        <tr>
-          <td>Dwayne Johnson</td>
-          <td>42</td>
-          <td>Male</td>
-          <td>Hayward</td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-
-
-<!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
